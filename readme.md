@@ -193,12 +193,14 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 ### You Do: A new project (10 min)
 
 1. Create the structure
- - In ~/wdi/sandbox.  Create a directory and initialize a new repository
- - Create an index.html and commit
- - Fill out html boilerplate and put some elements on the page then commit
-- Add some styling
-  - Create a branch called "style"
-  - Create a stylesheet link it to your html and add some styling to your page then commit
+   - In ~/wdi/sandbox.  Create a directory and initialize a new repository
+   - Create an index.html and commit
+   - Fill out html boilerplate and put some elements on the page then commit
+2. Add some styling
+    - Create a branch called "style"
+    - Create a stylesheet link it to your html and add some styling to your page then commit
+3. Checkout back to your master branch
+    - Merge Changes From our style branch Back into master
 
 ## Common Commands for Managing Branches
 
