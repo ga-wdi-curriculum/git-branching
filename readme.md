@@ -14,26 +14,26 @@ Quickly review the basics of git:
 
 1. What is the most common workflow for committing while working
 locally?
->
+
 > 1. $ git init
-2. $ git add <file-name>
-3. $ git commit -m "commit message"
+> 2. $ git add <file-name>
+> 3. $ git commit -m "commit message"
 
 2. What commands are used to share changes (commits) between local and remote repos?
->
+
 > 1. Add Remote Repo: $ git remote add [remote_name] <remote_repo_url>
-2. Push Commits: $ git push origin [branch_name]
-3. Pull Changes/Commits: $ git pull origin [branch_name]
+> 2. Push Commits: $ git push origin [branch_name]
+> 3. Pull Changes/Commits: $ git pull origin [branch_name]
 
 3. Describe the differences between a fork and a clone.
->
-> 1. Fork: make a copy of a repo on github under a different account, used for OSS collaboration
-2. Clone: download an entire remote repository, to be used as a local repository
+
+> Fork: make a copy of a repo on github under a different account, used for OSS collaboration
+> Clone: download an entire remote repository, to be used as a local repository
 
 4. What are the differences between Git and Github?
->
+
 > 1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
-2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
+> 2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
 
 
 ## You Do: Research Git Branching (15 min)
