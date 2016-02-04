@@ -23,7 +23,7 @@ locally?
 
 ---
 > Answers:
----
+
 > Question 1:
   1. $ git init
   2. $ git add <file-name>
@@ -35,8 +35,8 @@ locally?
   3. Pull Changes/Commits: $ git pull origin [branch_name]
 
 > Question 3:
-  Fork: make a copy of a repo on github under a different account, used for OSS collaboration
-  Clone: download an entire remote repository, to be used as a local repository
+  1. Fork: make a copy of a repo on github under a different account, used for OSS collaboration
+  2. Clone: download an entire remote repository, to be used as a local repository
 
 > Question 4:
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
