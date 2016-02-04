@@ -1,32 +1,29 @@
-# Intermediate Git
+# Git-Branching
 
 ## Learning Objectives
 
 - Explain what a branch is in git
 - Create, merge and delete branches on local and remote repositories
 - Describe how branching and merging allows for collaboration during development
+- Describe Github Workflows using issues, branches, and pull-requests, and merge conflicts
 - Resolve a merge conflict
 
-
-## Review Git Basics (5 min)
+## Opening Framing (5 min)
 
 Quickly review the basics of git:
 
-1. What is the most common workflow for creating save points while working
+1. What is the most common workflow for committing while working
 locally?
-2. What commands are used to share changes (commits) between repos?
-3. Describe the fork/clone model, and how it is used for HW submission.
+2. What commands are used to share changes (commits) between local and remote repos?
+3. Describe the differences between a fork and a clone.
+4. What are the differences between Git and Github?
 
-## You Do: Branching Overview (15 min)
+## You Do: Research Git Branching (15 min)
 
-We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
-
-- Do Levels 1-3.  Stop at 4: "Rebase Introduction".
-- Take your time:
-  - Read all the dialogs.  They are part of the tutorial.
-  - Think about what you want to achieve
-  - Think about the results you expect *before* you press enter.
-- Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
+- Read the "Using Branches" of
+* [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
+  - Let me know when you have reached the "git merge" section
+  - You will see references to Subversion(SVN).  SVN is an older version control system.  You will not need to know more than that regarding SVN to understand the comparisons.
 
 ## Think/Pair/Share-1/3/6: Why Branches?  (10 min)
 
@@ -34,7 +31,6 @@ You've had a brief overview.  Let's take a minute to think about why they are im
 
 Q. Why is branching an important part of git?
 ---
-
 > A. Branches are useful for many reasons, but some of the most common ones:
 
 > 1. To allow experimentation. By switching to a new branch, we can experiment,
@@ -44,14 +40,6 @@ into master.
 2. To allow work to proceed on multiple features (or by multiple people) without
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
-
-
-## You Do: Research Git Branching (15 min)
-
-- Read the "Using Branches" of
-* [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
-  - Let me know when you have reached the "git merge" section
-  - You will see references to Subversion(SVN).  SVN is an older version control system.  I don't believe you need to know more than that to understand the comparisons.
 
 ## What are Branches? (5 min)
 
@@ -68,6 +56,16 @@ tip of the branch.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
+## You Do: Branching Exercise (15 min)
+
+We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
+
+- Do Levels 1-3.  Stop at 4: "Rebase Introduction".
+- Take your time:
+  - Read all the dialogs.  They are part of the tutorial.
+  - Think about what you want to achieve
+  - Think about the results you expect *before* you press enter.
+- Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
 ## Break? (10 min)
 
@@ -106,7 +104,7 @@ tip of the branch.
 
   **Note the change in the CL prompt here**
 
-- Make initial commt
+- Make initial commit
 
   `git add branching.txt`
 
@@ -164,7 +162,7 @@ tip of the branch.
 
 ### FtF and Questions
 
-### You Do: A new project (15 min)
+### You Do: A new project (10 min)
 
 1. Create the structure
  - In ~/wdi/sandbox.  Create a directory and initialize a new repository
@@ -173,10 +171,6 @@ tip of the branch.
 - Add some styling
   - Create a branch called "style"
   - Create a stylesheet link it to your html and add some styling to your page then commit
-- Add some functionality
-  - Create a new branch from master called "alert"
-  - Create a script to alert when an element on your page is pressed and commit
-
 
 ## Common Commands for Managing Branches
 
@@ -189,6 +183,42 @@ tip of the branch.
   * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
+## Overview of GitHub Workflow (10 min)
+> From [Github Guides](https://guides.github.com/introduction/flow/)
+
+To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
+
+1. **Discuss**
+
+Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
+
+2. **Create an Issue**
+
+An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
+
+Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
+
+3. **Create a Branch**
+
+Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
+
+```
+$ git checkout -b [name of branch that solves issue]
+
+```
+4. **Work and commit onto your branch**
+
+Make changes/commits commits locally, then push your branch up to our remote repository
+
+5. **Open a Pull-Request or PR**
+
+By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
+
+As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
+
+<!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
+
+6. **Merge Branch into Master**
 
 ## Exercise - Pushing and PRs from Branches (10 min)
 
@@ -210,44 +240,51 @@ To do so:
 2. Open those files and fix the conflicts. (Look for the '<<<<', '====', and '>>>>' which will guide you to the conflict)
 3. Commit the fixes.
 
-
-## Exercise - Merge Conflicts (20 min)
+## Exercise - Merge Conflicts (25 min)
 
 1. Pair up with someone.
 - Pick someone as the 'primary', and the 'secondary'.
-- The primary should create a repo and add the secondary as a collaborator (search github for how to do this)
-- Both members should clone the repo, and make changes on the "master" branch.
 
-Merging commits:
+2. Create a New Repo
 
-1. Make commits on one computer and push them.
-- Pull them to the other computer.
-- Repeat the other way.
+  Primary Student Instructions:
+  - In your ~wdi/sandbox directory, create a new directory named merge-conflicts.
+  - Initialize merge-conflicts as a git repository and create an index.html file
+  - Work with the Secondary student to fill out the basic skeleton for index.html file.   
+  - Create a Remote Repo called merge-conflicts and add this repo locally as a remote repo for your merge-conflicts directory.
+  - Make sure to save and commit local changes and push up to the Remote Repo
+  - Add the Secondary student as a Collaborator (search github for how to do this)
 
-Merge conflicts:
+  Secondary Students Instructions:
+  - After they are added as a Collaborator, they should clone the same repo. Do not fork the Repo.
 
-1. Both students make changes on your respective working dirs, to the same line, of the same file.  Commit and push the changes.
-- One collaborator will be forced to solve the merge conflicts, when they pull the changes to the same line.
-- Practice resolving the commit.
-- Repeat, ensuring the other partner pushes second, forcing them to resolve the new conflict.
+3. Both the Primary and Secondary should make changes locally on the same "master" branch
+  - Modify the index.html
+  - Add and Commit Changes Locally.
 
-## Homework
+5. Merging commits:
+  - The Primary Student should push up their changes first
+  - Then, the Secondary Student should do the same and try pushing up their changes
+
+6. Merge conflicts:
+  - When the Secondary Student Tries to Push their commits, there should be merge conflicts
+  - The Secondary Student should work locally (with the Primary) to resolving the merge conflicts.
+  - Once completed, push up changes to the remote repo
+
+7. Pulling Changes:
+  - Now, the Primary student should pull down the changes from the remote repo and work to resolve the      merge conflicts
+
+## Closing (5 min)
+
+Review Learning Objectives:
+* Explain what a branch is in git
+* Create, merge and delete branches on local and remote repositories
+* Describe how branching and merging allows for collaboration during development
+* Resolve a merge conflict
+
+### Homework
 
 From this point on, all homework submissions should be a pull request from a feature (or 'topic') branch, named `<your_name>_solution`.
-
-
-## `git mergetool` (An exercise for the reader)
-
-Some merge conflicts can be quite confusing.  Git provides a way to use a visual tool to assist in resolving the merge conflicts.
-
-If you have installed XCode, an decent tool (opendiff) is used.  For this class, we will use [KDiff3](http://kdiff3.sourceforge.net/).  Here's an [example, with images](http://www.gitguys.com/topics/merging-with-a-gui#Merging_with_kdiff3), including a way to try it first.
-
-- Install via homebrew: `brew install kdiff3`
-- Setup KDiff3 as your merge too using [these instructions](http://naleid.com/blog/2012/01/12/how-to-use-kdiff3-as-a-3-way-merge-tool-with-mercurial-git-and-tower-app).  
-  - Be sure to skip the "Installation" steps.
-  - Stop at "Git Tower Integration"
-- When you have a merge conflict, you can type `git mergetool` to see a 3-way merge and the merge results.  Like this: ![](http://naleid.com/images/2012/01/kdiff3_merge_window_fixed.png)
-
 
 ## References
 
