@@ -47,8 +47,6 @@ locally?
   A branch in git is just a label on a  particular commit in a repository, along
   with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
 
-  <!--Senario: One time, I was working on a new feature for a client, committing directly to master. The client found a typo issue, and I had to fix it immediately. Because i was committing to master, I had to undo my work in order to fix and ship the typo... -->
-
 ## You Do: Research Git Branching (15 min)
 
 - Read the "Using Branches" of
