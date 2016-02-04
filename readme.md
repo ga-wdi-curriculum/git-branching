@@ -42,6 +42,12 @@ locally?
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
   2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
 
+## What are Branches? (5 min)
+
+  A branch in git is just a label on a  particular commit in a repository, along
+  with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
+
+  <!--Senario: One time, I was working on a new feature for a client, committing directly to master. The client found a typo issue, and I had to fix it immediately. Because i was committing to master, I had to undo my work in order to fix and ship the typo... -->
 
 ## You Do: Research Git Branching (15 min)
 
@@ -66,10 +72,7 @@ into master.
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 
-## What are Branches? (5 min)
-
-A branch in git is just a label on a  particular commit in a repository, along
-with all of it's history (parent commits).
+## How Git Branching Works (5 min)
 
 What makes a branch special in git (vs a tag), is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
