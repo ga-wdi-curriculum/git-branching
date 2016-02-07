@@ -70,7 +70,7 @@ into master.
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 
-## How Git Branching Works (5 min)
+## How Git Branching Works (10 min)
 
 What makes a branch special in git (vs a tag), is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
@@ -93,22 +93,6 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-## Break? (10 min)
-
-### FtF and Questions
-
-### You Do: A new project (10 min)
-
-1. Create the structure
-   - In ~/wdi/sandbox.  Create a directory and initialize a new repository
-   - Create an index.html and commit
-   - Fill out html boilerplate and put some elements on the page then commit
-2. Add some styling
-    - Create a branch called "style"
-    - Create a stylesheet link it to your html and add some styling to your page then commit
-3. Checkout back to your master branch
-    - Merge Changes From our style branch Back into master
-
 ## Common Commands for Managing Branches
 
 * `git branch <new_branch_name>` - create a new branch
@@ -119,6 +103,20 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   * will not let you delete if branch isn't merged into another branch (i.e. would cause data loss)
   * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
+
+## Break? (10 min)
+
+### FtF and Questions
+
+## Exercise - Pushing and PRs from Branches (10 min)
+
+Many OSS projects request that you create pull requests from a non-master branch.
+
+1. Fork and Clone https://github.com/ga-dc/git-tricks.
+2. Create and switch to a branch called `<your_name>_suggestion`.
+3. Add your own "trick".
+4. Commit, and push that change to your remote called 'origin' (your fork)
+5. Create a pull request from that branch to the upstream (ga-dc) master branch
 
 ## Overview of GitHub Workflow (10 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
@@ -157,17 +155,19 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 **Merge Branch into Master**
 
-## Exercise - Pushing and PRs from Branches (10 min)
+### You Do: A new project (10 min)
 
-Many OSS projects request that you create pull requests from a non-master branch.
+1. Create the structure
+   - In ~/wdi/sandbox.  Create a directory and initialize a new repository
+   - Create an index.html and commit
+   - Fill out html boilerplate and put some elements on the page then commit
+2. Add some styling
+    - Create and Checkout a branch called "style"
+    - Create a stylesheet link it to your html and add some styling to your page then commit
+3. Checkout back to your master branch
+    - Merge Changes From our style branch Back into our master branch
 
-1. Fork and Clone https://github.com/ga-dc/git-tricks.
-2. Create and switch to a branch called `<your_name>_suggestion`.
-3. Add your own "trick".
-4. Commit, and push that change to your remote called 'origin' (your fork)
-5. Create a pull request from that branch to the upstream (ga-dc) master branch
-
-## Merge Conflicts (5 min)
+## Merge Conflicts (10 min)
 
 When we try to merge two branches (or commits from the same branch from a remote), changes may conflict. In this case, git will stop and ask us to fix the issues manually.
 
@@ -223,8 +223,9 @@ Review Learning Objectives:
 
 From this point on, all homework submissions should be a pull request from a feature (or 'topic') branch, named `<your_name>_solution`.
 
-## References
+## References & Additional Resources
 
+* [Git-Guide](http://rogerdudler.github.io/git-guide/)
 * [Git Book - Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 * [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/)
