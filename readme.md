@@ -181,6 +181,8 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 <!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
 
+### Merge Branch into Master
+
 ## Merge Conflicts (10 min)
 
 PLEASE NOTE: This process does not always go smoothly, but don't be scared!
