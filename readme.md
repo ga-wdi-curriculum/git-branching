@@ -70,7 +70,7 @@ into master.
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 
-## How Git Branching Works (10 min)
+## How Git Branching Works (5 min)
 
 What makes a branch special in git (vs a tag), is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
@@ -173,11 +173,23 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 When we try to merge two branches (or commits from the same branch from a remote), changes may conflict. In this case, git will stop and ask us to fix the issues manually.
 
+A ‘conflict’ occurs when the commit that has to be merged has some change in the same place as the current commit.
+
 To do so:
 
 1. Locate which files contain conflicts using `git status`
 2. Open those files and fix the conflicts. (Look for the '<<<<', '====', and '>>>>' which will guide you to the conflict)
 3. Commit the fixes.
+
+```
+<<<<<<< HEAD:file.txt
+This is the original text in your current branch
+=======
+This is the modified text
+>>>>>>> 77976da35a11db4580b80ae27e8d65caf5208086:file.txt
+
+```
+>The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
 ## Exercise - Merge Conflicts (25 min)
 
@@ -189,8 +201,8 @@ To do so:
   Primary Student Instructions:
   - In your ~wdi/sandbox directory, create a new directory named merge-conflicts.
   - Initialize merge-conflicts as a git repository and create an index.html file
-  - Work with the Secondary student to fill out the basic skeleton for index.html file.   
-  - Create a Remote Repo called merge-conflicts and add this repo locally as a remote repo for your merge-conflicts directory.
+  - Work with the Secondary student to fill out the basic structure for the index.html file.   
+  - Create a New Repo on Github called merge-conflicts and add this repo locally as a remote repo for your merge-conflicts directory.
   - Make sure to save and commit local changes and push up to the Remote Repo
   - Add the Secondary student as a Collaborator (search github for how to do this)
 
@@ -208,10 +220,10 @@ To do so:
 6. Merge conflicts:
   - When the Secondary Student Tries to Push their commits, there should be merge conflicts
   - The Secondary Student should work locally (with the Primary) to resolving the merge conflicts.
-  - Once completed, push up changes to the remote repo
+  - Once completed, commit and push up changes to the remote repo
 
 7. Pulling Changes:
-  - Now, the Primary student should pull down the changes from the remote repo and work to resolve the      merge conflicts
+  - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
 ## Closing (5 min)
 
@@ -219,10 +231,14 @@ Review Learning Objectives:
 * Explain what a branch is in git
 * Create, merge and delete branches on local and remote repositories
 * Describe how branching and merging allows for collaboration during development
+* Describe Github Workflows using issues, branches, and pull-requests
 * Resolve a merge conflict
 
 Quiz Questions:
-1.
+1. What is a feature branch in Git?
+2. How can you check what branch your are currently working in?
+3. How can you bring a new feature in the main branch?
+4. What is a conflict in git? How can a conflict be resolved?
 
 ### Homework
 
