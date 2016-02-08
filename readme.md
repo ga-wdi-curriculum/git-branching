@@ -106,8 +106,6 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Break? (10 min)
 
-### FtF and Questions
-
 ## You Do: Pushing and PRs from Branches (10 min)
 
 Many OSS projects request that you create pull requests from a non-master branch.
@@ -118,24 +116,24 @@ Many OSS projects request that you create pull requests from a non-master branch
 4. Commit, and push that change to your remote called 'origin' (your fork)
 5. Create a pull request from that branch to the upstream (ga-dc) master branch
 
-## Overview of GitHub Workflow (10 min)
+## Overview of GitHub Workflow (15 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
 
 ![Github Workflows](github_workflows.jpg)
 
-**Discuss**
+### Discuss
 
 Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
 
-**Create an Issue**
+### Create an Issue
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
 Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
 
-**Create a Branch**
+### Create a Branch
 
 Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
 
@@ -143,11 +141,11 @@ Create a feature branch off the master to work on this issue. Our branch name sh
 $ git checkout -b [name of branch that solves issue]
 
 ```
-**Work and commit onto your branch**
+### Work and commit onto your branch
 
 Make changes/commits commits locally, then push your branch up to our remote repository
 
-**Open a Pull-Request or PR**
+### Open a Pull-Request or PR
 
 By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
@@ -155,9 +153,9 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 <!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
 
-**Merge Branch into Master**
+### Merge Branch into Master
 
-### You Do: A new project (10 min)
+## You Do: A new project (10 min)
 
 1. Create the structure
    - In ~/wdi/sandbox.  Create a directory and initialize a new repository
