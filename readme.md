@@ -106,6 +106,32 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Break? (10 min)
 
+### Merge Branch into Master
+
+## Git Merging (5 min)
+
+If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
+
+```
+$ git merge <feature_branch_name>
+
+```
+Git creates a new snapshot from this merge and automatically creates a new commit that points to it (the merge commit).
+
+Additionally, we can merge our Remote Repos as well by issuing a PR, and merging on Github. If one of our team members are the ones merging their branches, we can pull down the changes and merge locally into our master:
+
+```
+$ git pull <name_of_remote> <branch>
+
+```
+
+Once merged, you can close the issue on github (if an issue was created), and delete the branch:
+
+```
+$ git branch -d <feature_branch_name>
+
+```
+
 ## You Do: Pushing and PRs from Branches (10 min)
 
 Many OSS projects request that you create pull requests from a non-master branch.
@@ -113,8 +139,10 @@ Many OSS projects request that you create pull requests from a non-master branch
 1. Fork and Clone https://github.com/ga-dc/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
 3. Add your own "trick".
-4. Commit, and push that change to your remote called 'origin' (your fork)
-5. Create a pull request from that branch to the upstream (ga-dc) master branch
+4. Commit, and then checkout to master
+5. Merge changes from your feature branch back into master
+6. Push your master branch to your remote called 'origin' (your fork)
+7. Create a pull request from that branch to the upstream (ga-dc) master branch
 
 ## Overview of GitHub Workflow (10 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
@@ -153,46 +181,16 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 <!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
 
-### Merge Branch into Master
-
-## Git Merging (5 min)
-
-If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
-
-```
-$ git merge <feature_branch_name>
-
-```
-Git creates a new snapshot from this merge and automatically creates a new commit that points to it (the merge commit).
-
-Additionally, we can merge our Remote Repos as well by issuing a PR, and merging on Github. If one of our team members are the ones merging their branches, we can pull down the changes and merge locally into our master:
-
-```
-$ git pull <name_of_remote> <branch>
-
-```
-
-Once merged, you can close the issue on github (if an issue was created), and delete the branch:
-
-```
-$ git branch -d <feature_branch_name>
-
-```
-
-## You Do: A new project (10 min)
-
-1. Create the structure
-   - In ~/wdi/sandbox.  Create a directory and initialize a new repository
-   - Create an index.html and commit
-   - Fill out html boilerplate and put some elements on the page then commit
-2. Add some styling
-    - Create and Checkout a branch called "style"
-    - Create a stylesheet link it to your html and add some styling to your page then commit
-3. Checkout back to your master branch
-    - Merge Changes From our style branch Back into our master branch
-
 ## Merge Conflicts (10 min)
 
+PLEASE NOTE: This process does not always go smoothly, but don't be scared!
+
+```
+Auto-merging <file_name>
+CONFLICT (content): Merge conflict in <file_name>
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
 When we try to merge two branches (or commits from the same branch from a remote), changes may conflict. In this case, git will stop and ask us to fix the issues manually.
 
 A ‘conflict’ occurs when the commit that has to be merged has some change in the same place as the current commit.
@@ -248,6 +246,19 @@ This is the modified text
 
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
+
+## Additional Exercise - Branching and Merging Exercise (10 min)
+
+  1. Create the structure
+     - In ~/wdi/sandbox.  Create a directory and initialize a new repository
+     - Create an index.html and commit
+     - Fill out html boilerplate and put some elements on the page then commit
+  2. Add some styling
+      - Create and Checkout a branch called "style"
+      - Create a stylesheet link it to your html and add some styling to your page then commit
+  3. Checkout back to your master branch
+      - Merge Changes From our style branch Back into our master branch
+
 
 ## Closing (5 min)
 
