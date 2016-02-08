@@ -72,7 +72,7 @@ interfering. When a feature is complete, it can be merged back into master.
 
 ## How Git Branching Works (5 min)
 
-What makes a branch special in git (vs a tag), is that we're always *on* a
+What makes a branch special in git, is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
 the new commit. Another way to say that is the branch label always stays at the
 tip of the branch.
@@ -130,15 +130,15 @@ $ git branch -d <feature_branch_name>
 
 ```
 
-## You Do: Pushing and PRs from Branches (10 min)
+## You Do: Branching, Merging, and PRs (10 min)
 
-Many OSS projects request that you create pull requests from a non-master branch.
+This exercise will give you practice in forking and cloning a remote repo, creating a branch, merging, and PRs.
 
 1. Fork and Clone https://github.com/ga-dc/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
 3. Add your own "trick".
 4. Commit, and then checkout to master
-5. Merge changes from your feature branch back into master
+5. Merge changes from your `<your_name>_suggestion` branch back into master
 6. Push your master branch to your remote called 'origin' (your fork)
 7. Create a pull request from that branch to the upstream (ga-dc) master branch
 
@@ -149,17 +149,17 @@ To Recap, In Software Development, Github is very useful in managing and trackin
 
 ![Github Workflows](github_workflows.jpg)
 
-### Discuss
+### 1. Discuss
 
 Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
 
-### Create an Issue
+### 2. Create an Issue
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
 Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
 
-### Create a Branch
+### 3. Create a Branch
 
 Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
 
@@ -167,11 +167,11 @@ Create a feature branch off the master to work on this issue. Our branch name sh
 $ git checkout -b [name of branch that solves issue]
 
 ```
-### Work and commit onto your branch
+### 4. Work and commit onto your branch
 
 Make changes/commits commits locally, then push your branch up to our remote repository
 
-### Open a Pull-Request or PR
+### 5. Open a Pull-Request or PR
 
 By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
@@ -179,7 +179,7 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 <!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
 
-### Merge Branch into Master
+### 6. Merge Branch into Master
 
 ## Merge Conflicts (10 min)
 
@@ -247,7 +247,7 @@ This is the modified text
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
-## Additional Exercise - Branching and Merging Exercise (10 min)
+## Additional Exercise - Branching and Merging Locally (10 min)
 
   1. Create the structure
      - In ~/wdi/sandbox.  Create a directory and initialize a new repository
