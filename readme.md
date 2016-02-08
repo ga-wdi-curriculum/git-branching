@@ -108,7 +108,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ### FtF and Questions
 
-## Exercise - Pushing and PRs from Branches (10 min)
+## You Do: Pushing and PRs from Branches (10 min)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -191,7 +191,7 @@ This is the modified text
 ```
 >The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
-## Exercise - Merge Conflicts (25 min)
+## You Do: Merge Conflicts (25 min)
 
 1. Pair up with someone.
 - Pick someone as the 'primary', and the 'secondary'.
