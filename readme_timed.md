@@ -44,7 +44,7 @@ locally?
 
 ## What are Branches? (5 min; 10:05-10:10)
 
-  A branch in git is just a label on a  particular commit in a repository, along
+  A branch in git is just a label on a particular commit in a repository, along
   with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
 
 ## You Do: Research Git Branching (15 min; 10:10-10:25)
@@ -72,7 +72,7 @@ interfering. When a feature is complete, it can be merged back into master.
 
 ## How Git Branching Works (5 min; 10:35-10:40)
 
-What makes a branch special in git (vs a tag), is that we're always *on* a
+What makes a branch special in git, is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
 the new commit. Another way to say that is the branch label always stays at the
 tip of the branch.
