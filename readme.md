@@ -116,13 +116,6 @@ $ git merge <feature_branch_name>
 ```
 Git creates a new snapshot from this merge and automatically creates a new commit that points to it (the merge commit).
 
-Additionally, we can merge our Remote Repos as well by issuing a PR, and merging on Github. If one of our team members are the ones merging their branches, we can pull down the changes and merge locally into our master:
-
-```
-$ git pull <name_of_remote> <branch>
-
-```
-
 Once merged, you can close the issue on github (if an issue was created), and delete the branch:
 
 ```
