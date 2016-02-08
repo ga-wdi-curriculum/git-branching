@@ -106,9 +106,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Break? (10 min)
 
-### Merge Branch into Master
-
-## Git Merging (5 min)
+## Git Merging (10 min)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
