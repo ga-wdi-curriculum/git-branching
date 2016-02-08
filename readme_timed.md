@@ -8,7 +8,7 @@
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## Opening Framing (5 min)
+## Opening Framing (5 min; 10:00-10:05)
 
 Quickly review the basics of git:
 
@@ -42,19 +42,19 @@ locally?
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
   2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
 
-## What are Branches? (5 min)
+## What are Branches? (5 min; 10:05-10:10)
 
   A branch in git is just a label on a  particular commit in a repository, along
   with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
 
-## You Do: Research Git Branching (15 min)
+## You Do: Research Git Branching (15 min; 10:10-10:25)
 
 - Read the "Using Branches" of
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
   - Let me know when you have reached the "git merge" section
   - You will see references to Subversion(SVN).  SVN is an older version control system.  You will not need to know more than that regarding SVN to understand the comparisons.
 
-## Think/Pair/Share-1/3/6: Why Branches?  (10 min)
+## Think/Pair/Share-1/3/6: Why Branches?  (10 min; 10:25-10:35)
 
 You've had a brief overview.  Let's take a minute to think about why they are important, then share with your neighbor, and we'll share what we feel is important.
 
@@ -70,7 +70,7 @@ into master.
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 
-## How Git Branching Works (5 min)
+## How Git Branching Works (5 min; 10:35-10:40)
 
 What makes a branch special in git (vs a tag), is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
@@ -82,7 +82,7 @@ tip of the branch.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
-## You Do: Branching Exercise (15 min)
+## You Do: Branching Exercise (15 min; 10:40-10:55)
 
 We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
 
@@ -104,9 +104,9 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-## Break? (10 min)
+## Break? (10 min; 10:55-11:05)
 
-## You Do: Pushing and PRs from Branches (10 min)
+## You Do: Pushing and PRs from Branches (10 min; 11:05-11:15)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -116,7 +116,7 @@ Many OSS projects request that you create pull requests from a non-master branch
 4. Commit, and push that change to your remote called 'origin' (your fork)
 5. Create a pull request from that branch to the upstream (ga-dc) master branch
 
-## Overview of GitHub Workflow (10 min)
+## Overview of GitHub Workflow (10 min; 11:15-11:25)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
@@ -155,7 +155,7 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 ### Merge Branch into Master
 
-## Git Merging (5 min)
+## Git Merging (5 min; 11:25-11:30)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
@@ -179,7 +179,7 @@ $ git branch -d <feature_branch_name>
 
 ```
 
-## You Do: A new project (10 min)
+## You Do: A new project (10 min; 11:30-11:40)
 
 1. Create the structure
    - In ~/wdi/sandbox.  Create a directory and initialize a new repository
@@ -191,7 +191,7 @@ $ git branch -d <feature_branch_name>
 3. Checkout back to your master branch
     - Merge Changes From our style branch Back into our master branch
 
-## Merge Conflicts (10 min)
+## Merge Conflicts (10 min; 11:40-11:50)
 
 When we try to merge two branches (or commits from the same branch from a remote), changes may conflict. In this case, git will stop and ask us to fix the issues manually.
 
@@ -213,9 +213,9 @@ This is the modified text
 ```
 >The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
-## Break? (10 min)
+## Break? (10 min; 11:50-12:00)
 
-## You Do: Merge Conflicts (25 min)
+## You Do: Merge Conflicts (25 min; 12:00-12:25)
 
 1. Pair up with someone.
 - Pick someone as the 'primary', and the 'secondary'.
@@ -249,7 +249,7 @@ This is the modified text
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
-## Closing (5 min)
+## Closing (5 min; 12:25-12:30)
 
 Review Learning Objectives:
 * Explain what a branch is in git
