@@ -235,10 +235,10 @@ Review Learning Objectives:
 * Resolve a merge conflict
 
 Quiz Questions:
-1. What is a feature branch in Git?
-2. How can you check what branch your are currently working in?
-3. How can you bring a new feature in the main branch?
-4. What is a conflict in git? How can a conflict be resolved?
+* What is a feature branch in Git?
+* How can you check what branch your are currently working in?
+* How can you bring a new feature in the main branch?
+* What is a conflict in git? How can a conflict be resolved?
 
 ### Homework
 
