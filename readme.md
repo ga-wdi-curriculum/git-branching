@@ -44,8 +44,8 @@ locally?
 
 ## What are Branches? (5 min)
 
-  A branch in git is just a label on a  particular commit in a repository, along
-  with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
+A branch in git is just a label or pointer to a particular commit in a repository, along
+with all of it's history (parent commits). Branches are incredibly lightweight and helps us as developers to make experimental changes!
 
 ## You Do: Research Git Branching (15 min)
 
@@ -69,6 +69,8 @@ into master.
 2. To allow work to proceed on multiple features (or by multiple people) without
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
+4. "Branch early, and Branch often". There is no additional overhead with making many branches, so it can be much easier to organize our work through many smaller branches over a larger branch. 
+
 
 ## How Git Branching Works (5 min)
 
@@ -76,6 +78,7 @@ What makes a branch special in git, is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
 the new commit. Another way to say that is the branch label always stays at the
 tip of the branch.
+
 
 ![Git Branch Diagram](Git.jpg)
 > The diagram above visualizes a repository with two lines of development, one is the master branch, and the other a feature branch. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
@@ -108,7 +111,9 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Git Merging (10 min)
 
-If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
+If our feature branch and work is complete, we need to merge our changes back into our master branch. 
+
+Locally, all we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
 ```
 $ git merge <feature_branch_name>
@@ -116,12 +121,13 @@ $ git merge <feature_branch_name>
 ```
 Git creates a new snapshot from this merge and automatically creates a new commit that points to it (the merge commit).
 
-Once merged, you can close the issue on github (if an issue was created), and delete the branch:
+Once merged, you delete the branch:
 
 ```
 $ git branch -d <feature_branch_name>
 
 ```
+On our Remote Repo, we can easily merge our branch back into master through a PR. Once the PR has been evaluated, we can then merge, and delete the branch remotely. 
 
 ## You Do: Branching, Merging, and PRs (10 min)
 
@@ -271,19 +277,6 @@ Quiz Questions:
 ### Homework
 
 From this point on, all homework submissions should be a pull request from a feature (or 'topic') branch, named `<your_name>_solution`.
-
-
-## `git mergetool` (An exercise for the reader)
-
-Some merge conflicts can be quite confusing.  Git provides a way to use a visual tool to assist in resolving the merge conflicts.
-
-If you have installed XCode, an decent tool (opendiff) is used.  For this class, we will use [KDiff3](http://kdiff3.sourceforge.net/).  Here's an [example, with images](http://www.gitguys.com/topics/merging-with-a-gui#Merging_with_kdiff3), including a way to try it first.
-
-- Install via homebrew: `brew install kdiff3`
-- Setup KDiff3 as your merge too using [these instructions](http://naleid.com/blog/2012/01/12/how-to-use-kdiff3-as-a-3-way-merge-tool-with-mercurial-git-and-tower-app).  
-  - Be sure to skip the "Installation" steps.
-  - Stop at "Git Tower Integration"
-- When you have a merge conflict, you can type `git mergetool` to see a 3-way merge and the merge results.  Like this: ![](http://naleid.com/images/2012/01/kdiff3_merge_window_fixed.png)
 
 ## References & Additional Resources
 
