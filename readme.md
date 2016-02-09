@@ -123,7 +123,7 @@ Once merged, you can delete the branch:
 $ git branch -d <feature_branch_name>
 
 ```
-***Remotely***, we can easily merge our branch back into master through a PR. Once the PR has been evaluated, we can then merge, and delete the branch remotely.
+***Remotely***, we could easily merge our branch back into master through a PR and delete the branch on Github.
 
 ## You Do: Branching, Merging, and PRs (10 min)
 
