@@ -107,7 +107,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Break? (10 min)
 
-## Git Merging & Demo (10 min)
+## Merging (10 min)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch.
 
