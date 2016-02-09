@@ -1,4 +1,4 @@
-# Git-Branching
+# Git Branching
 
 ## Learning Objectives
 
@@ -35,7 +35,7 @@ locally?
   3. Pull Changes/Commits: $ git pull origin [branch_name]
 
 > Question 3:
-  1. Fork: make a copy of a repo on github under a different account, used for OSS collaboration
+  1. Fork: make a copy of a repo on github under a different account, used for collaboration
   2. Clone: download an entire remote repository, to be used as a local repository
 
 > Question 4:
@@ -45,7 +45,7 @@ locally?
 ## What are Branches? (5 min)
 
 A branch in git is just a label or pointer to a particular commit in a repository, along
-with all of it's history (parent commits). Branches are incredibly lightweight and helps us as developers to make experimental changes!
+with all of it's history (parent commits). Branches are incredibly lightweight "movable pointers" that helps us as developers to make experimental changes!
 
 ## You Do: Research Git Branching (15 min)
 
