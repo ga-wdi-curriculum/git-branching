@@ -78,6 +78,8 @@ specific branch, and when we commit, the current branch label moves forward to
 the new commit. Another way to say that is the branch label always stays at the
 tip of the branch.
 
+You will see the term HEAD used in git while creating branches. HEAD is simply a reference to the current or most recent commit!
+
 ![Git Branch Diagram](git_branching_image.jpg)
 > The diagram above visualizes a repository with two lines of development, one is the master branch, and the other a feature branch. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
 
@@ -152,7 +154,7 @@ Discuss an idea for a new feature or any question about our project/application 
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
-Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
+It can be useful to write the issue as short functional spec, documenting the requirements as user stories.
 
 ### Create a Branch
 
