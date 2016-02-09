@@ -107,7 +107,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Break? (10 min)
 
-## Git Merging (10 min)
+## Git Merging & Demo (10 min)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch.
 
@@ -131,16 +131,16 @@ Many OSS projects request that you create pull requests from a non-master branch
 
 1. Fork and Clone https://github.com/ga-dc/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
-3. Add your own "trick".
+3. Add your own "trick" aka git command/functionality you just learned (or researched) about.
 4. Commit, and then checkout to master
 5. Merge changes from your feature branch back into master
 6. Push your master branch to your remote called 'origin' (your fork)
-7. Create a pull request from that branch to the upstream (ga-dc) master branch
+7. Create a pull request from your master to the upstream (ga-dc) master branch
 
-## Overview of GitHub Workflow (10 min)
+## Overview of a GitHub Workflow (10 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
-To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
+To Recap, in Software Development, Github is very useful in managing and tracking updates and changes to our code.
 
 ![Github Workflows](github_workflows.jpg)
 
@@ -162,7 +162,7 @@ Create a feature branch off the master to work on this issue. Our branch name sh
 $ git checkout -b [name of branch that solves issue]
 
 ```
-### Work and commit onto your branch
+### Work on your Branch and Commit Locally
 
 Make changes/commits commits locally, then push your branch up to our remote repository
 
@@ -218,7 +218,8 @@ This is the modified text
   Primary Student Instructions:
   - In your ~wdi/sandbox directory, create a new directory named merge-conflicts.
   - Initialize merge-conflicts as a git repository and create an index.html file
-  - Work with the Secondary student to fill out the basic structure for the index.html file.   
+  - Work with the Secondary student to fill out the basic structure for the index.html file.
+  -Include in the index.html file an <h1> tag with the content "Merge Conflicts", and a <p> tag with something new you learned about today.
   - Create a New Repo on Github called merge-conflicts and add this repo locally as a remote repo for your merge-conflicts directory.
   - Make sure to save and commit local changes and push up to the Remote Repo
   - Add the Secondary student as a Collaborator (search github for how to do this)
@@ -227,7 +228,7 @@ This is the modified text
   - After they are added as a Collaborator, they should clone the same repo. Do not fork the Repo.
 
 3. Both the Primary and Secondary should make changes locally on the same "master" branch
-  - Modify the index.html
+  - Modify the index.html, including both changing the h1 and p elements
   - Add and Commit Changes Locally.
 
 5. Merging commits:
@@ -235,8 +236,8 @@ This is the modified text
   - Then, the Secondary Student should do the same and try pushing up their changes
 
 6. Merge conflicts:
-  - When the Secondary Student Tries to Push their commits, there should be merge conflicts
-  - The Secondary Student should work locally (with the Primary) to resolving the merge conflicts.
+  - When the Secondary Student tries to push their commits, there should be merge conflicts.
+  - The Secondary Student should work locally (with the Primary) to resolve the merge conflicts.
   - Once completed, commit and push up changes to the remote repo
 
 7. Pulling Changes:
@@ -277,7 +278,8 @@ From this point on, all homework submissions should be a pull request from a fea
 ## References & Additional Resources
 
 * [Git-Guide](http://rogerdudler.github.io/git-guide/)
+* [Atlassian - Git Merging versus Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
+* [Github - Git-Command-Cheat-Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 * [Git Book - Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 * [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/)
-* [Git Sandbox](http://pcottle.github.io/learnGitBranching/?NODEMO)
