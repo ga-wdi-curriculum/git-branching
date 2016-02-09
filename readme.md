@@ -44,8 +44,8 @@ locally?
 
 ## What are Branches? (5 min)
 
-  A branch in git is just a label on a  particular commit in a repository, along
-  with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
+A branch in git is just a label or pointer to a particular commit in a repository, along
+with all of it's history (parent commits). Branches are incredibly lightweight and helps us as developers to make experimental changes!
 
 ## You Do: Research Git Branching (15 min)
 
@@ -69,15 +69,18 @@ into master.
 2. To allow work to proceed on multiple features (or by multiple people) without
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
+4. "Branch early, and Branch often". There is no additional overhead with making many branches, so it can be much easier to organize our work through many smaller branches over a larger branch. 
+
 
 ## How Git Branching Works (5 min)
 
-What makes a branch special in git (vs a tag), is that we're always *on* a
+What makes a branch special in git, is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
 the new commit. Another way to say that is the branch label always stays at the
 tip of the branch.
 
-![Git Branch Diagram](Git_Branching.jpg)
+
+![Git Branch Diagram](Git.jpg)
 > The diagram above visualizes a repository with two lines of development, one is the master branch, and the other a feature branch. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
@@ -108,7 +111,9 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Git Merging (10 min)
 
-If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
+If our feature branch and work is complete, we need to merge our changes back into our master branch. 
+
+Locally, all we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
 ```
 $ git merge <feature_branch_name>
@@ -116,29 +121,23 @@ $ git merge <feature_branch_name>
 ```
 Git creates a new snapshot from this merge and automatically creates a new commit that points to it (the merge commit).
 
-Additionally, we can merge our Remote Repos as well by issuing a PR, and merging on Github. If one of our team members are the ones merging their branches, we can pull down the changes and merge locally into our master:
-
-```
-$ git pull <name_of_remote> <branch>
-
-```
-
-Once merged, you can close the issue on github (if an issue was created), and delete the branch:
+Once merged, you delete the branch:
 
 ```
 $ git branch -d <feature_branch_name>
 
 ```
+On our Remote Repo, we can easily merge our branch back into master through a PR. Once the PR has been evaluated, we can then merge, and delete the branch remotely. 
 
-## You Do: Pushing and PRs from Branches (10 min)
+## You Do: Branching, Merging, and PRs (10 min)
 
-Many OSS projects request that you create pull requests from a non-master branch.
+This exercise will give you practice in forking and cloning a remote repo, creating a branch, merging, and PRs.
 
 1. Fork and Clone https://github.com/ga-dc/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
 3. Add your own "trick".
 4. Commit, and then checkout to master
-5. Merge changes from your feature branch back into master
+5. Merge changes from your `<your_name>_suggestion` branch back into master
 6. Push your master branch to your remote called 'origin' (your fork)
 7. Create a pull request from that branch to the upstream (ga-dc) master branch
 
@@ -149,17 +148,17 @@ To Recap, In Software Development, Github is very useful in managing and trackin
 
 ![Github Workflows](github_workflows.jpg)
 
-### Discuss
+### 1. Discuss
 
 Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
 
-### Create an Issue
+### 2. Create an Issue
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
 Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
 
-### Create a Branch
+### 3. Create a Branch
 
 Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
 
@@ -167,11 +166,11 @@ Create a feature branch off the master to work on this issue. Our branch name sh
 $ git checkout -b [name of branch that solves issue]
 
 ```
-### Work and commit onto your branch
+### 4. Work and commit onto your branch
 
 Make changes/commits commits locally, then push your branch up to our remote repository
 
-### Open a Pull-Request or PR
+### 5. Open a Pull-Request or PR
 
 By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
@@ -179,11 +178,11 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 <!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
 
-### Merge Branch into Master
+### 6. Merge Branch into Master
 
 ## Merge Conflicts (10 min)
 
-PLEASE NOTE: This process does not always go smoothly, but don't be scared!
+PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
 
 ```
 Auto-merging <file_name>
@@ -247,7 +246,7 @@ This is the modified text
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
-## Additional Exercise - Branching and Merging Exercise (10 min)
+## Additional Exercise - Branching and Merging Locally (10 min)
 
   1. Create the structure
      - In ~/wdi/sandbox.  Create a directory and initialize a new repository
