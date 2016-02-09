@@ -45,7 +45,7 @@ locally?
 ## What are Branches? (5 min)
 
 A branch in git is just a label or pointer to a particular commit in a repository, along
-with all of it's history (parent commits). Branches are incredibly lightweight and helps us as developers to make experimental changes!
+with all of it's history (parent commits). Branches are incredibly lightweight "movable pointers" that helps us as developers to make experimental changes!
 
 ## You Do: Research Git Branching (15 min)
 
