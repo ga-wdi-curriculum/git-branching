@@ -1,4 +1,4 @@
-# Git-Branching
+# Git Branching
 
 ## Learning Objectives
 
