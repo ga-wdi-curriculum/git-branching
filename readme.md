@@ -219,7 +219,7 @@ This is the modified text
   - In your ~wdi/sandbox directory, create a new directory named merge-conflicts.
   - Initialize merge-conflicts as a git repository and create an index.html file
   - Work with the Secondary student to fill out the basic structure for the index.html file.
-  -Include in the index.html file an <h1> tag with the content "Merge Conflicts", and a <p> tag with something new you learned about today.
+  -Include in the index.html file an h1 tag with the content "Merge Conflicts", and a p tag with something new you learned about today.
   - Create a New Repo on Github called merge-conflicts and add this repo locally as a remote repo for your merge-conflicts directory.
   - Make sure to save and commit local changes and push up to the Remote Repo
   - Add the Secondary student as a Collaborator (search github for how to do this)
