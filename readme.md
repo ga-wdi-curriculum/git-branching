@@ -35,7 +35,7 @@ locally?
   3. Pull Changes/Commits: $ git pull origin [branch_name]
 
 > Question 3:
-  1. Fork: make a copy of a repo on github under a different account, used for OSS collaboration
+  1. Fork: make a copy of a repo on github under a different account, used for collaboration
   2. Clone: download an entire remote repository, to be used as a local repository
 
 > Question 4:
