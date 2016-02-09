@@ -30,7 +30,7 @@ locally?
   3. $ git commit -m "commit message"
 
 > Question 2:
-  1. Add Remote Repo: $ git remote add [remote_name] <remote_repo_url>
+  1. Add Remote Repo: $ git remote add [remote_name] [remote_repo_url]
   2. Push Commits: $ git push origin [branch_name]
   3. Pull Changes/Commits: $ git pull origin [branch_name]
 
