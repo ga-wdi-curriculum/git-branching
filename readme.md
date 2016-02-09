@@ -182,7 +182,7 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 ## Merge Conflicts (10 min)
 
-PLEASE NOTE: This process does not always go smoothly, but don't be scared!
+PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
 
 ```
 Auto-merging <file_name>
