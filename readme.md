@@ -287,6 +287,7 @@ From this point on, all homework submissions should be a pull request from a fea
 
 ## References & Additional Resources
 
+* [Common Git Errors](https://github.com/ga-wdi-lessons/git-review/blob/master/readme.md)
 * [Git-Guide](http://rogerdudler.github.io/git-guide/)
 * [Atlassian - Git Merging versus Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
 * [Github - Git-Command-Cheat-Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
