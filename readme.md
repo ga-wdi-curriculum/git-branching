@@ -107,7 +107,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-## Break? (10 min)
+## Break (10 min)
 
 ## Merging (10 min)
 
@@ -208,7 +208,7 @@ This is the modified text
 ```
 >The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
-## Break? (10 min)
+## Break (10 min)
 
 ## You Do: Merge Conflicts (25 min)
 
@@ -257,7 +257,7 @@ This is the modified text
   3. Checkout back to your master branch
       - Merge Changes From our style branch Back into our master branch
 
-  ***Bonus***
+  **Bonus: Add JavaScript Functionality**
   4. Add JavaScript Functionality
       - create a new branch
       - create a new file called script.js
