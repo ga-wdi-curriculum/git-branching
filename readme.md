@@ -8,7 +8,7 @@
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## Opening Framing (5 min)
+## Framing (5 min)
 
 Quickly review the basics of git:
 
@@ -47,7 +47,7 @@ locally?
 A branch in git is just a label or pointer to a particular commit in a repository, along
 with all of it's history (parent commits). Branches are incredibly lightweight "movable pointers" that helps us as developers to make experimental changes!
 
-## You Do: Research Git Branching (15 min)
+## You Do: Research Git Branching (10 min)
 
 - Read the "Using Branches" of
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
@@ -245,7 +245,7 @@ This is the modified text
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
-## Additional Exercise - Branching and Merging Practice
+## Additional Exercise - Branching and Merging Practice (10 min)
 
   1. Create the structure
      - In ~/wdi/sandbox.  Create a directory and initialize a new repository
@@ -256,6 +256,14 @@ This is the modified text
       - Create a stylesheet link it to your html and add some styling to your page then commit
   3. Checkout back to your master branch
       - Merge Changes From our style branch Back into our master branch
+
+  ***Bonus***
+  4. Add JavaScript Functionality
+      - create a new branch
+      - create a new file called script.js
+      - link our script.js file in our index.html
+      - in the script.js file, add functionality to alert a user "hello world" when the html page is opened in the browser
+  5. Merge our Branch back into master
 
 
 ## Closing (5 min)
