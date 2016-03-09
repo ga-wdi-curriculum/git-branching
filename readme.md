@@ -8,7 +8,8 @@
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## Framing - Why Branch? (5 min)
+## ![](brain-icon-small.png) Framing - Why Branch? (5 min)
+
 
 > Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do? [1](http://www.sbf5.com/~cduan/technical/git/git-2.shtml)
 
@@ -33,7 +34,7 @@ interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
 
-## How Git Branching Works (5 min)
+## ![](brain-icon-small.png) How Git Branching Works (5 min)
 
 Branches are incredibly lightweight "movable pointers" that help us as developers make experimental changes! A branch in git is just a label or pointer to a particular commit in a repository, along with all of it's history (parent commits).
 
@@ -80,7 +81,7 @@ locally?
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
   2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
 
-### You Do: Branching Exercise (15 min)
+### ![](tools-icon-small.png) You Do: Branching Exercise (15 min)
 
 We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
 
@@ -104,7 +105,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 ## Break (10 min)
 
-## Merging (10 min)
+## ![](tools-icon-small.png) Merging (10 min)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch.
 
@@ -134,7 +135,7 @@ Many OSS projects request that you create pull requests from a non-master branch
 6. Push your master branch to your remote called 'origin' (your fork)
 7. Create a pull request from your master to the upstream (ga-dc) master branch
 
-## Overview of a GitHub Workflow (10 min)
+## ![](brain-icon-small.png) Overview of a GitHub Workflow (10 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, in Software Development, Github is very useful in managing and tracking updates and changes to our code.
@@ -173,7 +174,7 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
-## Merge Conflicts (10 min)
+## ![](tools-icon-small.png) Merge Conflicts (10 min)
 
 PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
 
@@ -205,7 +206,7 @@ This is the modified text
 
 ## Break (10 min)
 
-## You Do: Merge Conflicts (25 min)
+## ![](tools-icon-small.png) You Do: Merge Conflicts (25 min)
 
 1. Pair up with someone.
 - Pick someone as the 'primary', and the 'secondary'.
@@ -240,7 +241,7 @@ This is the modified text
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
-## Closing (5 min)
+## ![](brain-icon-small.png) Closing (5 min)
 
 Review Learning Objectives:
 * Explain what a branch is in git
