@@ -47,7 +47,7 @@ tip of the branch.
 
 
 
-## Review (5 min)
+### Review (5 min)
 
 Quickly review the basics of git:
 
@@ -81,7 +81,7 @@ locally?
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
   2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
 
-## You Do: Branching Exercise (15 min)
+### You Do: Branching Exercise (15 min)
 
 We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
 
@@ -92,7 +92,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-## Common Commands for Managing Branches
+### Common Commands for Managing Branches
 
 * `git branch <new_branch_name>` - create a new branch
 * `git checkout <branch_name>` - switch to a specific branch (checks out tip commit and makes branch active)
@@ -123,7 +123,7 @@ $ git branch -d <feature_branch_name>
 ```
 ***Remotely***, we could easily merge our branch back into master through a PR and delete the branch on Github.
 
-## You Do: Branching, Merging, and PRs (10 min)
+### You Do: Branching, Merging, and PRs (10 min)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -240,27 +240,6 @@ This is the modified text
 
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
-
-## Additional Exercise - Branching and Merging Practice (10 min)
-
-  1. Create the structure
-     - In ~/wdi/sandbox.  Create a directory and initialize a new repository
-     - Create an index.html and commit
-     - Fill out html boilerplate and put some elements on the page then commit
-  2. Add some styling
-      - Create and Checkout a branch called "style"
-      - Create a stylesheet link it to your html and add some styling to your page then commit
-  3. Checkout back to your master branch
-      - Merge Changes From our style branch Back into our master branch
-
-  **Bonus: Add JavaScript Functionality**
-  4. Add JavaScript Functionality
-      - create a new branch
-      - create a new file called script.js
-      - link our script.js file in our index.html
-      - in the script.js file, add functionality to alert a user "hello world" when the html page is opened in the browser
-  5. Merge our Branch back into master
-
 
 ## Closing (5 min)
 
