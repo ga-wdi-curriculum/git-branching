@@ -142,17 +142,17 @@ To Recap, in Software Development, Github is very useful in managing and trackin
 
 ![Github Workflows](github_workflows.jpg)
 
-### Discuss
+#### Discuss
 
 Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
 
-### Create an Issue
+#### Create an Issue
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
 It can be useful to write the issue as short functional spec, documenting the requirements as user stories.
 
-### Create a Branch
+#### Create a Branch
 
 Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
 
@@ -160,19 +160,19 @@ Create a feature branch off the master to work on this issue. Our branch name sh
 $ git checkout -b [name of branch that solves issue]
 
 ```
-### Work on your Branch and Commit Locally
+#### Work on your Branch and Commit Locally
 
 Make changes/commits commits locally, then push your branch up to our remote repository
 
-### Open a Pull-Request or PR
+#### Open a Pull-Request or PR
 
 By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
 As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
 
-<!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
+#### Merge Branch into Master
 
-### Merge Branch into Master
+It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
 ## Merge Conflicts (10 min)
 
