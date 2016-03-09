@@ -8,7 +8,46 @@
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## Framing (5 min)
+## Framing - Why Branch? (5 min)
+
+> Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do?
+
+### Think/Pair/Share -1/2/2: What can you do? (5 min)
+
+Take a minute to brainstorm some options for what could be done here, then share with your neighbor, and we'll share what we feel is important.
+
+## What are Branches? (5 min)
+
+Branches are incredibly lightweight "movable pointers" that help us as developers make experimental changes! A branch in git is just a label or pointer to a particular commit in a repository, along with all of it's history (parent commits).
+
+#### Q. Why is branching an important part of git?
+---
+> A. Branches are useful for many reasons, but some of the most common ones:
+
+> 1. To allow experimentation. By switching to a new branch, we can experiment,
+and if the experiment fails, we can delete it and easily switch back to master
+(or another branch of our choice). If it succeeds, we can merge those changes
+into master.
+2. To allow work to proceed on multiple features (or by multiple people) without
+interfering. When a feature is complete, it can be merged back into master.
+3. To allow easy bug fixes on a stable version while features are being developed.
+4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
+
+## How Git Branching Works (5 min)
+
+What makes a branch special in git, is that we're always *on* a
+specific branch, and when we commit, the current branch label moves forward to
+the new commit. Another way to say that is the branch label always stays at the
+tip of the branch.
+
+**Terminology:** HEAD is simply a reference to the current or most recent commit!
+
+![Git Branch Diagram](branches.png)
+> The diagram above visualizes a repository with multiple lines of development, one is the master branch, and the others are feature branches. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
+
+
+
+## Review (5 min)
 
 Quickly review the basics of git:
 
@@ -41,49 +80,6 @@ locally?
 > Question 4:
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
   2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
-
-## What are Branches? (5 min)
-
-A branch in git is just a label or pointer to a particular commit in a repository, along
-with all of it's history (parent commits). Branches are incredibly lightweight "movable pointers" that helps us as developers to make experimental changes!
-
-## You Do: Research Git Branching (10 min)
-
-- Read the "Using Branches" of
-* [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
-  - Let me know when you have reached the "git merge" section
-  - You will see references to Subversion(SVN).  SVN is an older version control system.  You will not need to know more than that regarding SVN to understand the comparisons.
-
-## Think/Pair/Share-1/3/6: Why Branches?  (10 min)
-
-You've had a brief overview.  Let's take a minute to think about why they are important, then share with your neighbor, and we'll share what we feel is important.
-
-Q. Why is branching an important part of git?
----
-> A. Branches are useful for many reasons, but some of the most common ones:
-
-> 1. To allow experimentation. By switching to a new branch, we can experiment,
-and if the experiment fails, we can delete it and easily switch back to master
-(or another branch of our choice). If it succeeds, we can merge those changes
-into master.
-2. To allow work to proceed on multiple features (or by multiple people) without
-interfering. When a feature is complete, it can be merged back into master.
-3. To allow easy bug fixes on a stable version while features are being developed.
-4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
-
-## How Git Branching Works (5 min)
-
-What makes a branch special in git, is that we're always *on* a
-specific branch, and when we commit, the current branch label moves forward to
-the new commit. Another way to say that is the branch label always stays at the
-tip of the branch.
-
-You will see the term HEAD used in git while creating branches. HEAD is simply a reference to the current or most recent commit!
-
-![Git Branch Diagram](git_branching_image.jpg)
-> The diagram above visualizes a repository with two lines of development, one is the master branch, and the other a feature branch. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
-
-> From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
 ## You Do: Branching Exercise (15 min)
 
@@ -294,3 +290,4 @@ From this point on, all homework submissions should be a pull request from a fea
 * [Git Book - Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 * [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/)
+* [Git Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
