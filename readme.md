@@ -10,7 +10,7 @@
 
 ## Framing - Why Branch? (5 min)
 
-> Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do?
+> Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do? [1](http://www.sbf5.com/~cduan/technical/git/git-2.shtml)
 
 ### Think/Pair/Share -1/2/2: What can you do? (5 min)
 
@@ -18,7 +18,7 @@ Take a minute to brainstorm some options for what could be done here, then share
 
 ## What are Branches? (5 min)
 
-Branches are incredibly lightweight "movable pointers" that help us as developers make experimental changes! A branch in git is just a label or pointer to a particular commit in a repository, along with all of it's history (parent commits).
+In Git, branches are a part of your everyday development process. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you the chance to clean up your feature’s history before merging it into the main branch [2](https://www.atlassian.com/git/tutorials/using-branches).
 
 #### Q. Why is branching an important part of git?
 ---
@@ -35,10 +35,9 @@ interfering. When a feature is complete, it can be merged back into master.
 
 ## How Git Branching Works (5 min)
 
-What makes a branch special in git, is that we're always *on* a
-specific branch, and when we commit, the current branch label moves forward to
-the new commit. Another way to say that is the branch label always stays at the
-tip of the branch.
+Branches are incredibly lightweight "movable pointers" that help us as developers make experimental changes! A branch in git is just a label or pointer to a particular commit in a repository, along with all of it's history (parent commits).
+
+What makes a branch special in git, is that we're always *on* a specific branch, and when we commit, the current branch HEAD moves forward to the new commit. Another way to say that is the HEAD always stays at the tip of the branch.
 
 **Terminology:** HEAD is simply a reference to the current or most recent commit!
 
