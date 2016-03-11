@@ -93,10 +93,12 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 * `git branch <new_branch_name>` - create a new branch
 * `git checkout <branch_name>` - switch to a specific branch (checks out tip commit and makes branch active)
 * `git checkout -b <new_branch_name>` - create a new branch and check it out in one step
-* `git branch` - list local branches (`-a` lists local and remote)
+* `git branch` - list local branches
+* `git branch -r` list remote branches
+* `git branch -a` list both remote & local branches
 * `git branch -d <branch_to_delete>` - delete a branch
   * will not let you delete if branch isn't merged into another branch (i.e. would cause data loss)
-  * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
+  * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch - **be careful!**
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
 [My favorite cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
