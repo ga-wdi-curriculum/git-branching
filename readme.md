@@ -77,7 +77,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-## Break (10 min)
+## Break (10 min; ~3:15-3:25)
 
 ## Common Commands for Managing Branches (5 min)
 
@@ -194,7 +194,7 @@ This is the modified text
 ```
 >The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
-## Break (10 min)
+## Break (10 min; ~4:05-4:15)
 
 ## ![](mechanical.png) You Do, 1-2 Pairs: Merge Conflicts (25 min)
 
