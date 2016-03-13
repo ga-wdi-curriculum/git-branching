@@ -8,8 +8,31 @@
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## ![](conceptual.png) Framing - Why Branch? (5 min)
+## Review (5 min)
 
+Quickly review the basics of git:
+
+1. What is the purpose of git? How does it differ from github?
+
+2. What is the most common workflow for committing while working locally?
+
+3. Explain what a fork and a clone are.
+
+4. What commands are used to share changes (commits) between local and remote repos?
+
+Answers:
+
+> Question 2 commands:
+  1. `$ git init` - create empty Git repo
+  2. `$ git add <file-name>` - stage file(s) for commit
+  3. `$ git commit -m "commit message"` - commit staged files
+
+> Question 4 commands:
+  1. `$ git remote add <remote_name> <repo_url>` - add remote repo
+  2. `$ git push origin master` - sync remote repo with local
+  3. `$ git pull origin master` - sync local repo with remote
+
+## ![](conceptual.png) Framing - Why Branch? (5 min)
 
 > Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do? [1](http://www.sbf5.com/~cduan/technical/git/git-2.shtml)
 
@@ -43,40 +66,6 @@ interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
 
-### Review (5 min)
-
-Quickly review the basics of git:
-
-1. What is the most common workflow for committing while working
-locally?
-
-2. What commands are used to share changes (commits) between local and remote repos?
-
-3. Describe the differences between a fork and a clone.
-
-4. What are the differences between Git and Github?
-
----
-> Answers:
-
-> Question 1:
-  1. $ git init
-  2. $ git add <file-name>
-  3. $ git commit -m "commit message"
-
-> Question 2:
-  1. Add Remote Repo: $ git remote add [remote_name] [remote_repo_url]
-  2. Push Commits: $ git push origin [branch_name]
-  3. Pull Changes/Commits: $ git pull origin [branch_name]
-
-> Question 3:
-  1. Fork: make a copy of a repo on github under a different account, used for collaboration
-  2. Clone: download an entire remote repository, to be used as a local repository
-
-> Question 4:
-  1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
-  2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
-
 ### ![](mechanical.png) You Do: Branching Exercise (15 min)
 
 We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
@@ -88,7 +77,9 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-### Common Commands for Managing Branches
+## Break (10 min)
+
+## Common Commands for Managing Branches (5 min)
 
 * `git branch <new_branch_name>` - create a new branch
 * `git checkout <branch_name>` - switch to a specific branch (checks out tip commit and makes branch active)
@@ -103,9 +94,8 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 [My favorite cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
 
-## Break (10 min)
 
-## ![](mechanical.png) Merging (10 min)
+## ![](mechanical.png) Merging (5 min)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch.
 
@@ -123,7 +113,7 @@ $ git branch -d <feature_branch_name>
 ```
 ***Remotely***, we could easily merge our branch back into master through a PR and delete the branch on Github.
 
-### You Do: Branching, Merging, and PRs (10 min)
+### We Do: Branching, Merging, and PRs (10 min)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -240,6 +230,12 @@ This is the modified text
 
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
+
+## Exit Ticket (3 min)
+
+Before you leave, plase take ~3 minutes to complete [this exit ticket.](https://docs.google.com/forms/d/1d03NYFphG6m7yAMUY1OlnJZMQWof7Rt6b5MX3Xn4ZPs/viewform)
+
+This helps us help you! We'll review responses for each exit ticket and start to implement them in future lessons.
 
 ## ![](conceptual.png) Closing (5 min)
 
