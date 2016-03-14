@@ -14,7 +14,7 @@ Quickly review the basics of git:
 
 1. What is the purpose of git? How does it differ from github?
 
-2. What is the most common workflow for committing while working locally?
+2. What command is used to start tracking a directory? What commands record the changes that occurred in the tracked directory?
 
 3. Explain what a fork and a clone are.
 
@@ -142,6 +142,8 @@ An Issue is a note on a repo regarding some matter that needs attention. It coul
 
 It can be useful to write the issue as short functional spec, documenting the requirements as user stories.
 
+[Issue for simple feature on Garnet](https://github.com/ga-dc/garnet/issues/522)
+
 #### Create a Branch
 
 Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
@@ -159,6 +161,8 @@ Make changes/commits commits locally, then push your branch up to our remote rep
 By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
 As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
+
+[PR for simple Garnet feature](https://github.com/ga-dc/garnet/pull/549)
 
 #### Merge Branch into Master
 
