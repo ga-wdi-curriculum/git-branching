@@ -95,7 +95,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-## Break (10 min; ~3:15-3:25)
+## Break (10 min; ~3:20-3:30)
 
 ## Common Commands for Managing Branches (5 min)
 
