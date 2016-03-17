@@ -66,35 +66,6 @@ interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
 
-### ![](mechanical.png) You Do: Branching Exercise (15 min)
-
-We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
-
-- Do Levels 1-3.  Stop at 4: "Rebase Introduction".
-- Take your time:
-  - Read all the dialogs.  They are part of the tutorial.
-  - Think about what you want to achieve
-  - Think about the results you expect *before* you press enter.
-- Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
-
-## Break (10 min; ~3:15-3:25)
-
-## Common Commands for Managing Branches (5 min)
-
-* `git branch <new_branch_name>` - create a new branch
-* `git checkout <branch_name>` - switch to a specific branch (checks out tip commit and makes branch active)
-* `git checkout -b <new_branch_name>` - create a new branch and check it out in one step
-* `git branch` - list local branches
-* `git branch -r` list remote branches
-* `git branch -a` list both remote & local branches
-* `git branch -d <branch_to_delete>` - delete a branch
-  * will not let you delete if branch isn't merged into another branch (i.e. would cause data loss)
-  * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch - **be careful!**
-* `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
-
-[My favorite cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
-
-
 ## ![](mechanical.png) Merging (5 min)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch.
@@ -113,17 +84,33 @@ $ git branch -d <feature_branch_name>
 ```
 ***Remotely***, we could easily merge our branch back into master through a PR and delete the branch on Github.
 
-### We Do: Branching, Merging, and PRs (10 min)
+### ![](mechanical.png) You Do: Branching Exercise (15 min)
 
-Many OSS projects request that you create pull requests from a non-master branch.
+We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
 
-1. Fork and Clone https://github.com/ga-dc/git-tricks.
-2. Create and switch to a branch called `<your_name>_suggestion`.
-3. Add your own "trick" aka git command/functionality you just learned (or researched) about.
-4. Commit, and then checkout to master
-5. Merge changes from your feature branch back into master
-6. Push your master branch to your remote called 'origin' (your fork)
-7. Create a pull request from your master to the upstream (ga-dc) master branch
+- Do Levels 1-3.  Stop at 4: "Rebase Introduction".
+- Take your time:
+  - Read all the dialogs.  They are part of the tutorial.
+  - Think about what you want to achieve
+  - Think about the results you expect *before* you press enter.
+- Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
+
+## Break (10 min; ~3:15-3:25)
+
+## Common Commands for Managing Branches (5 min)
+
+* `git branch <new_branch_name>` - create a new branch
+* ⭐`git checkout <branch_name>` - switch to a specific branch (checks out tip commit and makes branch active)
+* ⭐`git checkout -b <new_branch_name>` - create a new branch and check it out in one step
+* `git branch` - list local branches
+* `git branch -r` list remote branches
+* `git branch -a` list both remote & local branches
+* `git branch -d <branch_to_delete>` - delete a branch
+  * will not let you delete if branch isn't merged into another branch (i.e. would cause data loss)
+  * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch - **be careful!**
+* ⭐`git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
+
+[My favorite cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
 
 ## ![](conceptual.png) Overview of a GitHub Workflow (10 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
@@ -167,6 +154,18 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 #### Merge Branch into Master
 
 It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
+
+### We Do: Branching, Merging, and PRs (10 min)
+
+Many OSS projects request that you create pull requests from a non-master branch.
+
+1. Fork and Clone https://github.com/ga-dc/git-tricks.
+2. Create and switch to a branch called `<your_name>_suggestion`.
+3. Add your own "trick" aka git command/functionality you just learned (or researched) about.
+4. Commit, and then checkout to master
+5. Merge changes from your feature branch back into master
+6. Push your master branch to your remote called 'origin' (your fork)
+7. Create a pull request from your master to the upstream (ga-dc) master branch
 
 ## ![](mechanical.png) Merge Conflicts (10 min)
 
