@@ -129,6 +129,8 @@ We are going to start with a [brief tutorial](http://learngitbranching.js.org/).
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
+> Please run this exercise using Chrome. It will not work propertly in Safari or Firefox.
+
 ---
 
 ## Break (10 min)
