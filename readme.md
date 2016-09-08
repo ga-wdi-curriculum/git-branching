@@ -12,25 +12,41 @@
 
 Quickly review the basics of git:
 
-1. What is the purpose of git? How does it differ from github?
+<details>
+<summary>1. What is the purpose of git? How does it differ from github?</summary>
+  ```
+  Git is a version control system allowing us to easily track files, manage changes, and move between versions. Github is a web application that hosts remote repositories and allows developers to easily host and share code.
+  ```
+</details>
 
-2. What command is used to start tracking a directory? What commands record the changes that occurred in the tracked directory?
+<summary> 2. What command is used to start tracking a directory? What commands record the changes that occurred in the tracked directory?</summary>
+  <br>
+  ```
+  1. $ git init - create empty Git repo
+  2. $ git add <file-name> - stage file(s) for commit
+  3. $ git commit -m "commit message" - commit staged files
+  ```
+</details>
 
-3. Explain what a fork and a clone are.
+<details>
+<summary>3. What's the difference between a fork and a clone?</summary>
 
-4. What commands are used to share changes (commits) between local and remote repos?
+  ```
+  A fork is a copy of a repository on github, a clone is a copy of a remote available locally.
+  ```
 
-Answers:
+</details>
 
-> Question 2 commands:
-  1. `$ git init` - create empty Git repo
-  2. `$ git add <file-name>` - stage file(s) for commit
-  3. `$ git commit -m "commit message"` - commit staged files
+<details>
+<summary> What commands are used to share changes (commits) between local and remote repos?</summary>
+  <br>
+  ```
+  1. $ git remote add <remote_name> <repo_url> - add remote repo
+  2. $ git push origin master - sync remote repo with local
+  3. $ git pull origin master - sync local repo with remote
+  ```
+</details>
 
-> Question 4 commands:
-  1. `$ git remote add <remote_name> <repo_url>` - add remote repo
-  2. `$ git push origin master` - sync remote repo with local
-  3. `$ git pull origin master` - sync local repo with remote
 
 ## ![](conceptual.png) Framing - Why Branch? (5 min)
 
@@ -95,7 +111,7 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-## Break (10 min; ~3:20-3:30)
+## Break (10 min)
 
 ## Common Commands for Managing Branches (5 min)
 
@@ -233,12 +249,6 @@ This is the modified text
 
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
-
-## Exit Ticket (3 min)
-
-Before you leave, plase take ~3 minutes to complete [this exit ticket.](https://docs.google.com/forms/d/1d03NYFphG6m7yAMUY1OlnJZMQWof7Rt6b5MX3Xn4ZPs/viewform)
-
-This helps us help you! We'll review responses for each exit ticket and start to implement them in future lessons.
 
 ## ![](conceptual.png) Closing (5 min)
 
