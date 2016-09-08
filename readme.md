@@ -69,7 +69,7 @@ What makes a branch special in git, is that we're always *on* a specific branch,
 
 **Terminology:** HEAD is simply a reference to the current or most recent commit!
 
-![Git Branch Diagram](branching.svg)
+![Git Branch Diagram](https://github.com/ga-wdi-lessons/git-branching/blob/master/branching.svg)
 
 > The diagram above visualizes a repository with multiple lines of development, one is the master branch, and the others are feature branches. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
 
@@ -102,7 +102,7 @@ Now imagine that we have completed our awesome feature on its own branch and we 
 
 Let's see what this process looks like visually:
 
-![before-merge](merging.svg)
+![before-merge](https://github.com/ga-wdi-lessons/git-branching/blob/master/merging.svg)
 
 ***Locally***, all we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
