@@ -69,7 +69,7 @@ What makes a branch special in git, is that we're always *on* a specific branch,
 
 **Terminology:** HEAD is simply a reference to the current or most recent commit!
 
-![Git Branch Diagram](https://github.com/ga-wdi-lessons/git-branching/blob/master/branching.svg)
+![Git Branch Diagram](https://github.com/ga-wdi-lessons/git-branching/blob/master/branching.svg?raw=true)
 
 > The diagram above visualizes a repository with multiple lines of development, one is the master branch, and the others are feature branches. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
 
