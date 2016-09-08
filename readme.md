@@ -197,13 +197,13 @@ It's good practice to even make a Pull Request for branches in your own reposito
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
-1. Fork and Clone https://github.com/ga-dc/git-tricks.
+1. Fork and Clone https://github.com/ga-wdi-exercises/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
 3. Add your own "trick" aka git command/functionality you just learned (or researched) about.
 4. Commit, and then checkout to master
 5. Merge changes from your feature branch back into master
 6. Push your master branch to your remote called 'origin' (your fork)
-7. Create a pull request from your master to the upstream (ga-dc) master branch
+7. Create a pull request from your master to the upstream (ga-wdi-exercises) master branch
 
 ## Merge Conflicts (10 min)
 
