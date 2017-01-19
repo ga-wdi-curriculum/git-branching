@@ -1,12 +1,10 @@
 # Git Branching + Workflows
 
 ## Learning Objectives
-
-- this is a test
 - Explain what a branch is in git
 - Create, merge and delete branches on local and remote repositories
 - Describe how branching and merging allows for collaboration during development
-- Describe Github Workflows using issues, branches, and pull-requests
+- Describe Github Workflows using issues, branches and pull-requests
 - Resolve a merge conflict
 
 ## Review (5 min)
@@ -16,7 +14,7 @@ Quickly review the basics of git:
 <details>
 <summary>1. What is the purpose of git? How does it differ from github?</summary>
   ```
-  Git is a version control system allowing us to easily track files, manage changes, and move between versions. Github is a web application that hosts remote repositories and allows developers to easily host and share code.
+  Git is a version control system allowing us to easily track files, manage changes and move between versions. Github is a web application that hosts remote repositories and allows developers to easily host and share code.
   ```
 </details>
 
@@ -64,9 +62,9 @@ In Git, branches are a part of your everyday development process. When you want 
 
 Branches are incredibly lightweight "movable pointers" that help us as developers make experimental changes! A branch in git is just a label or pointer to a particular commit in a repository, along with all of it's history (parent commits).
 
-What makes a branch special in git, is that we're always *on* a specific branch, and when we commit, the current branch HEAD moves forward to the new commit. Another way to say that is the HEAD always stays at the tip of the branch.
+What makes a branch special in git, is that we're always *on* a specific branch, and when we commit, the current branch HEAD moves forward to the new commit.
 
-**Terminology:** HEAD is simply a reference to the current or most recent commit!
+**Terminology:** HEAD is simply a reference to the current commit!
 
 ![Git Branch Diagram](branching.png)
 
@@ -128,7 +126,7 @@ We are going to start with a [brief tutorial](http://learngitbranching.js.org/).
   - Think about the results you expect *before* you press enter.
 - Whenever you see/type `git commit`, it may help to assume changes have been made and staged.  Why else would you "commit"?
 
-> Please run this exercise using Chrome. It will not work propertly in Safari or Firefox.
+> Please run this exercise using Chrome. It will not work properly in Safari or Firefox.
 
 ---
 
@@ -196,7 +194,7 @@ It's good practice to even make a Pull Request for branches in your own reposito
 
 ### We Do: Branching, Merging, and PRs (10 min)
 
-Many OSS projects request that you create pull requests from a non-master branch.
+Many open-source software (OSS) projects request that you create pull requests from a non-master branch.
 
 1. Fork and Clone https://github.com/ga-wdi-exercises/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
@@ -252,10 +250,10 @@ This is the modified text
   -Include in the `index.html` file an `h1` tag with the content "Merge Conflicts", and a `p` tag with something new you learned about today.
   - Create a New Repo on Github called `merge-conflicts` and add this repo locally as a remote repo for your merge-conflicts directory.
   - Make sure to save and commit local changes and push up to the Remote Repo
-  - Add the Secondary student as a Collaborator (search github for how to do this)
+  - Add the Secondary student as a Collaborator (look up how to do this)
 
   **Secondary** Students Instructions:
-  - After they are added as a Collaborator, they should clone the same repo. Do not fork the Repo.
+  - After they are added as a Collaborator, they should clone the same repo. **Do not fork the Repo.**
 
 3. Both the Primary and Secondary should make changes locally on the same "master" branch
   - Modify the `index.html`, including both changing the `h1` and `p` elements
@@ -266,12 +264,12 @@ This is the modified text
   - Then, the Secondary Student should do the same and try pushing up their changes
 
 6. Merge conflicts:
-  - When the Secondary Student tries to push their commits, there should be merge conflicts.
-  - The Secondary Student should work locally (with the Primary) to resolve the merge conflicts.
+  - When the Secondary Student tries to push their commits, there should be merge conflicts after the `git pull` command is executed.
+  - The Secondary Student should work locally (with the Primary) on the Secondary's machine to resolve the merge conflicts by determining what content both want to appear in the file.
   - Once completed, commit and push up changes to the remote repo
 
 7. Pulling Changes:
-  - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
+  - Now, the Primary student should pull down the changes from the remote repo.
 
 ## Closing (5 min)
 
@@ -302,3 +300,4 @@ From this point on, all homework submissions should be a pull request from a fea
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 * [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/)
 * [Git Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
+* [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
