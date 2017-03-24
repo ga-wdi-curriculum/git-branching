@@ -13,44 +13,50 @@ Quickly review the basics of git:
 
 <details>
 <summary>1. What is the purpose of git? How does it differ from github?</summary>
-  ```
+  <br />
   Git is a version control system allowing us to easily track files, manage changes and move between versions. Github is a web application that hosts remote repositories and allows developers to easily host and share code.
-  ```
+  <br />
+  <br />
 </details>
 
 <details>
 <summary>2. What command is used to start tracking a directory? What commands record the changes that occurred in the tracked directory?</summary>
-  <br>
-  ```
-  1. $ git init - create empty Git repo
-  2. $ git add <file-name> - stage file(s) for commit
-  3. $ git commit -m "commit message" - commit staged files
-  ```
+  <br />
+  ```1. $ git init - create empty Git repo```
+  <br />
+  ```2. $ git add <file-name> - stage file(s) for commit```
+  <br />
+  ```3. $ git commit -m "commit message" - commit staged files```
+  <br />
+  <br />
 </details>
 
 <details>
 <summary>3. What's the difference between a fork and a clone?</summary>
-
+  <br>
   ```
   A fork is a copy of a repository on github, a clone is a copy of a remote available locally.
   ```
-
+  <br />
+  <br />
 </details>
 
 <details>
 <summary>4. What commands are used to share changes (commits) between local and remote repos?</summary>
-  <br>
-  ```
-  1. $ git remote add <remote_name> <repo_url> - add remote repo
-  2. $ git push origin master - sync remote repo with local
-  3. $ git pull origin master - sync local repo with remote
-  ```
+  <br />
+  ```1. $ git remote add <remote_name> <repo_url> - add remote repo```
+  <br />
+  ```2. $ git push origin master - sync remote repo with local```
+  <br />
+  ```3. $ git pull origin master - sync local repo with remote```
+  <br />
+  <br />
 </details>
 
 
 ## Framing - Why Branch? (5 min)
 
-> Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do? [1](http://www.sbf5.com/~cduan/technical/git/git-2.shtml)
+> Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do?
 
 ### Think/Pair/Share -1/2/2: What can you do? (5 min)
 
@@ -58,7 +64,7 @@ Take a minute to brainstorm some options for what could be done here, then share
 
 ## How Git Branching Works (10 min)
 
-In Git, branches are a part of your everyday development process. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you the chance to clean up your feature’s history before merging it into the main branch [2](https://www.atlassian.com/git/tutorials/using-branches).
+In Git, branches are a part of your everyday development process. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you the chance to clean up your feature’s history before merging it into the main branch.
 
 Branches are incredibly lightweight "movable pointers" that help us as developers make experimental changes! A branch in git is just a label or pointer to a particular commit in a repository, along with all of it's history (parent commits).
 
@@ -77,18 +83,18 @@ What makes a branch special in git, is that we're always *on* a specific branch,
 <details>
 <summary>Q. Why is branching an important part of git?</summary>
 <br>
-
-> Branches are useful for many reasons, but some of the most common ones:
-
-> 1. To allow experimentation. By switching to a new branch, we can experiment,
-and if the experiment fails, we can delete it and easily switch back to master
-(or another branch of our choice). If it succeeds, we can merge those changes
-into master.
-2. To allow work to proceed on multiple features (or by multiple people) without
-interfering. When a feature is complete, it can be merged back into master.
+Branches are useful for many reasons, but some of the most common ones:
+<br />
+<br />
+1. To allow experimentation. By switching to a new branch, we can experiment, and if the experiment fails, we can delete it and easily switch back to master (or another branch of our choice). If it succeeds, we can merge those changes into master.
+<br />
+2. To allow work to proceed on multiple features (or by multiple people) without interfering. When a feature is complete, it can be merged back into master.
+<br />
 3. To allow easy bug fixes on a stable version while features are being developed.
+<br />
 4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
-
+<br />
+<br />
 </details>
 
 ---
@@ -261,10 +267,11 @@ This is the modified text
 
 5. Merging commits:
   - The Primary Student should push up their changes first
-  - Then, the Secondary Student should do the same and try pushing up their changes
+  - Then, the Secondary Student should do the same and try pushing up their changes.
 
 6. Merge conflicts:
-  - When the Secondary Student tries to push their commits, there should be merge conflicts after the `git pull` command is executed.
+  - When the Secondary Student tries to push their commits, they should get an error message saying that the remote repo contains changes they do not have and instructing them to run `git pull origin master` to pull down these new changes.
+  - The Secondary Student should get merge conflicts after the `git pull` command is executed.
   - The Secondary Student should work locally (with the Primary) on the Secondary's machine to resolve the merge conflicts by determining what content both want to appear in the file.
   - Once completed, commit and push up changes to the remote repo
 
@@ -285,10 +292,6 @@ Quiz Questions:
 * How can you check what branch your are currently working in?
 * How can you bring a new feature in the main branch?
 * What is a conflict in git? How can a conflict be resolved?
-
-### Homework
-
-From this point on, all homework submissions should be a pull request from a feature (or 'topic') branch, named `<your_name>_solution`.
 
 ## References & Additional Resources
 
