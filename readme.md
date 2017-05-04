@@ -4,10 +4,10 @@
 - Explain what a branch is in git
 - Create, merge and delete branches on local and remote repositories
 - Describe how branching and merging allows for collaboration during development
-- Describe Github Workflows using issues, branches and pull-requests
+- Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## Review (5 min)
+## Review (5 min, 0:05)
 
 Quickly review the basics of git:
 
@@ -22,11 +22,11 @@ Quickly review the basics of git:
 <details>
 <summary>2. What command is used to start tracking a directory? What commands record the changes that occurred in the tracked directory?</summary>
   <br />
-  ```1. $ git init - create empty Git repo```
+  <code>1. $ git init - create empty Git repo</code>
   <br />
-  ```2. $ git add <file-name> - stage file(s) for commit```
+  <code>2. $ git add <file-name> - stage file(s) for commit</code>
   <br />
-  ```3. $ git commit -m "commit message" - commit staged files```
+  <code>3. $ git commit -m "commit message" - commit staged files</code>
   <br />
   <br />
 </details>
@@ -34,9 +34,9 @@ Quickly review the basics of git:
 <details>
 <summary>3. What's the difference between a fork and a clone?</summary>
   <br>
-  ```
+  <code>
   A fork is a copy of a repository on github, a clone is a copy of a remote available locally.
-  ```
+  </code>
   <br />
   <br />
 </details>
@@ -44,25 +44,25 @@ Quickly review the basics of git:
 <details>
 <summary>4. What commands are used to share changes (commits) between local and remote repos?</summary>
   <br />
-  ```1. $ git remote add <remote_name> <repo_url> - add remote repo```
+  <code>1. $ git remote add <remote_name> <repo_url> - add remote repo</code>
   <br />
-  ```2. $ git push origin master - sync remote repo with local```
+  <code>2. $ git push origin master - sync remote repo with local</code>
   <br />
-  ```3. $ git pull origin master - sync local repo with remote```
+  <code>3. $ git pull origin master - sync local repo with remote</code>
   <br />
   <br />
 </details>
 
 
-## Framing - Why Branch? (5 min)
+## Framing - Why Branch? (5 min, 0:10)
 
 > Say you are working on a paper. You’ve gotten a first draft out, submitted for review. You then get a new batch of data, and you’re in the process of integrating it into the paper. Halfway in, however, the review committee calls you up and tells you that you need to change some of your section headings to conform to format specifications. What do you do?
 
-### Think/Pair/Share -1/2/2: What can you do? (5 min)
+### Think/Pair/Share -1/2/2: What can you do? (5 min, 0:15)
 
 Take a minute to brainstorm some options for what could be done here, then share with your neighbor, and we'll share what we feel is important.
 
-## How Git Branching Works (10 min)
+## How Git Branching Works (10 min, 0:25)
 
 In Git, branches are a part of your everyday development process. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you the chance to clean up your feature’s history before merging it into the main branch.
 
@@ -70,7 +70,7 @@ Branches are incredibly lightweight "movable pointers" that help us as developer
 
 What makes a branch special in git, is that we're always *on* a specific branch, and when we commit, the current branch HEAD moves forward to the new commit.
 
-**Terminology:** HEAD is simply a reference to the current commit!
+**Terminology:** HEAD is simply a reference to the current commit. By default, this is the most recent commit.
 
 ![Git Branch Diagram](branching.png)
 
@@ -78,7 +78,7 @@ What makes a branch special in git, is that we're always *on* a specific branch,
 
 ---
 
-## Why Branch (5 mins)
+## Why Branch (5 min, 0:30)
 
 <details>
 <summary>Q. Why is branching an important part of git?</summary>
@@ -99,7 +99,7 @@ Branches are useful for many reasons, but some of the most common ones:
 
 ---
 
-## Merging (5 min)
+## Merging (5 min, 0:35)
 
 Now imagine that we have completed our awesome feature on its own branch and we want to bring those changes back into `master`, we now need a way to consolidate these two versions of our code base. The easiest way to do this is by  **merging** the feature branch into the master branch.
 
@@ -109,19 +109,19 @@ Let's see what this process looks like visually:
 
 ***Locally***, all we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
-```
+```bash
 $ git merge <feature_branch_name>
 
 ```
 Once merged, you can delete the branch:
 
-```
+```bash
 $ git branch -d <feature_branch_name>
 
 ```
 ***Remotely***, we could easily merge our branch back into master through a PR and delete the branch on Github.
 
-### You Do: Branching Exercise (15 min)
+### You Do: Branching Exercise (15 min, 0:50)
 
 We are going to start with a [brief tutorial](http://learngitbranching.js.org/).  This is an introduction to branching.
 
@@ -136,26 +136,26 @@ We are going to start with a [brief tutorial](http://learngitbranching.js.org/).
 
 ---
 
-## Break (10 min)
+## Break (10 min, 1:00)
 
 ---
 
-## Common Commands for Managing Branches (5 min)
+## Common Commands for Managing Branches (5 min, 1:05)
 
-* `git branch <new_branch_name>` - create a new branch
 * ⭐`git checkout <branch_name>` - switch to a specific branch (checks out tip commit and makes branch active)
 * ⭐`git checkout -b <new_branch_name>` - create a new branch and check it out in one step
+* ⭐`git merge <branch_name>` - merges `<branch_name>` into the **current branch**, creating a new merge commit in the process
+* `git branch <new_branch_name>` - create a new branch
 * `git branch` - list local branches
 * `git branch -r` list remote branches
 * `git branch -a` list both remote & local branches
 * `git branch -d <branch_to_delete>` - delete a branch
   * will not let you delete if branch isn't merged into another branch (i.e. would cause data loss)
-  * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch - **be careful!**
-* ⭐`git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
+  * `git branch -D <branch_to_delete>` - overrides and deletes an unmerged branch - **be careful!**
 
 [My favorite cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
 
-## Overview of a GitHub Workflow (10 min)
+## Overview of a GitHub Workflow (10 min, 1:15)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, in Software Development, Github is very useful in managing and tracking updates and changes to our code.
@@ -176,21 +176,23 @@ It can be useful to write the issue as short functional spec, documenting the re
 
 #### Create a Branch
 
-Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
+Create a feature branch off the master to work on this issue. The branch name should reflect the issue or feature we are working on.
 
-```
-$ git checkout -b [name of branch that solves issue]
+> Example of good branch names: `fix-login-authentication`, `animate-nav-bar`
 
+```bash
+ $ git checkout -b [name of branch that adds feature or solves issue]
 ```
+
 #### Work on your Branch and Commit Locally
 
-Make changes/commits commits locally, then push your branch up to our remote repository
+Make changes, add, and commit locally, then push your branch up to our remote repository.
 
 #### Open a Pull-Request or PR
 
-By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
+By making a PR, you’re requesting that someone pull in your changes and merge them into the branch you are making the pull request against. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
-As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
+As soon as you commit and push a change, you can open a Pull Request. People use Pull Requests an medium for starting discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members! This type of feedback can be extremely potent and productive since your code and its comments will have an evident thought process that will be the basis for targeted feedback on your code. 
 
 [PR for simple Garnet feature](https://github.com/ga-dc/garnet/pull/549)
 
@@ -198,7 +200,7 @@ As soon as you make a change, you can open a Pull Request. People use Pull Reque
 
 It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
-### We Do: Branching, Merging, and PRs (10 min)
+### We Do: Branching, Merging, and PRs (10 min, 1:25)
 
 Many open-source software (OSS) projects request that you create pull requests from a non-master branch.
 
@@ -210,7 +212,7 @@ Many open-source software (OSS) projects request that you create pull requests f
 6. Push your master branch to your remote called 'origin' (your fork)
 7. Create a pull request from your master to the upstream (ga-wdi-exercises) master branch
 
-## Merge Conflicts (10 min)
+## Merge Conflicts (10 min, 1:35)
 
 PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
 
@@ -218,8 +220,8 @@ PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
 Auto-merging <file_name>
 CONFLICT (content): Merge conflict in <file_name>
 Automatic merge failed; fix conflicts and then commit the result.
-
 ```
+
 When we try to merge two branches (or commits from the same branch from a remote), changes may conflict. In this case, git will stop and ask us to fix the issues manually.
 
 A ‘conflict’ occurs when the commit that has to be merged has some change in the same place as the current commit.
@@ -236,71 +238,73 @@ This is the original text in your current branch
 =======
 This is the modified text
 >>>>>>> 77976da35a11db4580b80ae27e8d65caf5208086:file.txt
-
 ```
+
 >The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
-## Break (10 min)
+## Break (10 min, 1:45)
 
-## You Do, 1-2 Pairs: Merge Conflicts (25 min)
+## You Do, 1-2 Pairs: Collaboration & Merge Conflicts (25 min, 2:10)
+
+This exercise will pertain to a workflow where 2 individuals work on the same repository as collaborators. It will not involve forking.
 
 1. Pair up with someone.
-- Pick someone as the 'primary', and the 'secondary'.
+- Designate one person as the **repository owner**, and the other as the **contributor**.
 
-2. Create a New Repo
+2. Creating a New Repo
 
-  **Primary** Student Instructions:
-  - In your `~wdi/sandbox` directory, create a new directory named `merge-conflicts`.
-  - Initialize merge-conflicts as a git repository and create an `index.html` file
-  - Work with the Secondary student to fill out the basic structure for the `index.html` file.
-  -Include in the `index.html` file an `h1` tag with the content "Merge Conflicts", and a `p` tag with something new you learned about today.
-  - Create a New Repo on Github called `merge-conflicts` and add this repo locally as a remote repo for your merge-conflicts directory.
-  - Make sure to save and commit local changes and push up to the Remote Repo
-  - Add the Secondary student as a Collaborator (look up how to do this)
+  **Repository Owner**:
+  - In your `~/wdi/sandbox` directory, create a new directory named `merge-conflicts`.
+  - Initialize `merge-conflicts` as a git repository and create an `index.html` file.
+  - Work with the contributor to fill out the basic structure for the `index.html` file.
+  - Include in the `index.html` file an `h1` tag with the content "Merge Conflicts", and a `p` tag with something new you learned about today.
+  - Create a New Repo on Github called `merge-conflicts` and add this repo locally as a remote repo for your `merge-conflicts` directory.
+  - Make sure to save and commit local changes and push up to the remote repo.
+  - Add the contributor as a Collaborator on GitHub (look up how to do this).
 
-  **Secondary** Students Instructions:
+  **Contributor** Instructions:
   - After they are added as a Collaborator, they should clone the same repo. **Do not fork the Repo.**
 
-3. Both the Primary and Secondary should make changes locally on the same "master" branch
-  - Modify the `index.html`, including both changing the `h1` and `p` elements
+3. Both the repository owner and Contributor should make changes locally on the `master` branch.
+  - Modify the `index.html`, including both changing the `h1` and `p` elements.
+    > The idea is to each make changes to the ***same thing***--a merge conflict will occur once the second set of conflicting changes are pushed
   - Add and Commit Changes Locally.
 
 5. Merging commits:
-  - The Primary Student should push up their changes first
-  - Then, the Secondary Student should do the same and try pushing up their changes.
+  - The repository owner should push up their changes first.
+  - Then, the Contributor should do the same and try pushing up their changes.
 
 6. Merge conflicts:
-  - When the Secondary Student tries to push their commits, they should get an error message saying that the remote repo contains changes they do not have and instructing them to run `git pull origin master` to pull down these new changes.
-  - The Secondary Student should get merge conflicts after the `git pull` command is executed.
-  - The Secondary Student should work locally (with the Primary) on the Secondary's machine to resolve the merge conflicts by determining what content both want to appear in the file.
+  - When the Contributor tries to push their commits, they should get an error message saying that the remote repo contains changes they do not have and instructing them to run `git pull origin master` to pull down these new changes.
+  - The Contributor should get merge conflicts after the `git pull` command is executed.
+  - The Contributor should work locally (with the repository owner) on the Contributor's machine to resolve the merge conflicts by determining what content both want to appear in the file.
   - Once completed, commit and push up changes to the remote repo
 
 7. Pulling Changes:
-  - Now, the Primary student should pull down the changes from the remote repo.
+  - Now, the repository owner should pull down the changes from the remote repo.
 
 ## Closing (5 min)
 
 Review Learning Objectives:
-* Explain what a branch is in git
-* Create, merge and delete branches on local and remote repositories
-* Describe how branching and merging allows for collaboration during development
-* Describe Github Workflows using issues, branches, and pull-requests
-* Resolve a merge conflict
+  - Explain what a branch is in git
+  - Create, merge and delete branches on local and remote repositories
+  - Describe how branching and merging allows for collaboration during development
+  - Describe Github Workflows using issues, branches, and pull-requests
+  - Resolve a merge conflict
 
 Quiz Questions:
-* What is a feature branch in Git?
-* How can you check what branch your are currently working in?
-* How can you bring a new feature in the main branch?
-* What is a conflict in git? How can a conflict be resolved?
+  - What is a feature branch in Git?
+  - What CLI command will indicate the branch you are currently on?
+  - How should you bring a new feature in the main branch?
+  - What causes a merge conflict in git? How can a merge conflict be resolved?
 
 ## References & Additional Resources
 
-* [Common Git Errors](https://github.com/ga-wdi-lessons/git-review/blob/master/readme.md)
-* [Git-Guide](http://rogerdudler.github.io/git-guide/)
-* [Atlassian - Git Merging versus Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
-* [Github - Git-Command-Cheat-Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-* [Git Book - Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-* [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
-* [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/)
-* [Git Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
-* [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
+  - [Common Git Errors](https://github.com/ga-wdi-lessons/git-review/blob/master/readme.md)
+  - [Git-Guide](http://rogerdudler.github.io/git-guide/)
+  - [Atlassian - Git Merging versus Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)
+  - [Github - Git-Command-Cheat-Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+  - [Git Book - Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+  - [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
+  - [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/) - [Git Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
+  - [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
