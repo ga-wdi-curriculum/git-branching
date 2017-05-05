@@ -192,7 +192,7 @@ Make changes, add, and commit locally, then push your branch up to our remote re
 
 By making a PR, you’re requesting that someone pull in your changes and merge them into the branch you are making the pull request against. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
-As soon as you commit and push a change, you can open a Pull Request. People use Pull Requests an medium for starting discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members! This type of feedback can be extremely potent and productive since your code and its comments will have an evident thought process that will be the basis for targeted feedback on your code. 
+As soon as you commit and push a change, you can open a Pull Request. People use Pull Requests as a medium for starting discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members! This type of feedback can be extremely potent and productive since your code and its comments will have an evident thought process that will be the basis for targeted feedback on your code.
 
 [PR for simple Garnet feature](https://github.com/ga-dc/garnet/pull/549)
 
@@ -204,13 +204,13 @@ It's good practice to even make a Pull Request for branches in your own reposito
 
 Many open-source software (OSS) projects request that you create pull requests from a non-master branch.
 
-1. Fork and Clone https://github.com/ga-wdi-exercises/git-tricks.
+1. ***Fork and Clone*** https://github.com/ga-wdi-exercises/git-tricks.
 2. Create and switch to a branch called `<your_name>_suggestion`.
 3. Add your own "trick" aka git command/functionality you just learned (or researched) about.
-4. Commit, and then checkout to master
-5. Merge changes from your feature branch back into master
-6. Push your master branch to your remote called 'origin' (your fork)
-7. Create a pull request from your master to the upstream (ga-wdi-exercises) master branch
+4. Commit, and then checkout to master.
+5. Merge changes from your feature branch back into master.
+6. Push your master branch to your remote called 'origin' (your fork).
+7. Create a pull request from your master to the upstream (ga-wdi-exercises) master branch.
 
 ## Merge Conflicts (10 min, 1:35)
 
