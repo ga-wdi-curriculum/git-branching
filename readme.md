@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 - Explain what a branch is in git
-- Create, merge and delete branches on local and remote repositories
+- Create, merge, and delete branches on local and remote repositories
 - Describe how branching and merging allows for collaboration during development
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
@@ -214,7 +214,7 @@ Many open-source software (OSS) projects request that you create pull requests f
 
 ## Merge Conflicts (10 min, 1:35)
 
-PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
+Merging often does not go smoothly, so don't be alarmed! When git tries to automatically merge commit histories,  it sometimes fails due to conflicting changes. This is called a **merge conflict**.
 
 ```
 Auto-merging <file_name>
@@ -278,7 +278,7 @@ This exercise will pertain to a workflow where 2 individuals work on the same re
   - When the Contributor tries to push their commits, they should get an error message saying that the remote repo contains changes they do not have and instructing them to run `git pull origin master` to pull down these new changes.
   - The Contributor should get merge conflicts after the `git pull` command is executed.
   - The Contributor should work locally (with the repository owner) on the Contributor's machine to resolve the merge conflicts by determining what content both want to appear in the file.
-  - Once completed, commit and push up changes to the remote repo
+  - Once completed, commit, and push up changes to the remote repo
 
 7. Pulling Changes:
   - Now, the repository owner should pull down the changes from the remote repo.
